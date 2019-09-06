@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://bitcoinconvector.herokuapp.com",
-    "dependencies": {
+  "dependencies": {
     "enzyme-adapter-react-16": "^1.14.0",
     "fetch": "^1.1.0",
     "node-fetch": "^2.6.0",
@@ -49,7 +49,6 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js"
-
     ]
   }
 }
