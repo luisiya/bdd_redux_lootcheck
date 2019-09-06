@@ -2,6 +2,7 @@
   "name": "lootcheck",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bitcoinconvector.herokuapp.com",
     "dependencies": {
     "enzyme-adapter-react-16": "^1.14.0",
     "fetch": "^1.1.0",
