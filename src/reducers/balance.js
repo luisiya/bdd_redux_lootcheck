@@ -5,15 +5,28 @@ const BALANCE_COOKIE = "BALANCE_COOKIE";
 
 const balance = (state = 0, action) => {
   let balance;
+  console.log(action.type)
     switch (action.type) {
       case constants.SET_BALANCE:
           balance =  action.balance;
           break;
       case constants.DEPOSIT:
-          balance = state + action.deposit;
+          console.log(action.deposit)
+          if(action.deposit !== undefined){
+              balance = state + action.deposit;
+          }
+          else{
+              balance = state;
+          }
+
           break;
       case constants.WITHDRAW:
-          balance =  state - action.withdraw;
+          if(action.withdraw !== undefined){
+              balance = state - action.withdraw;
+          }
+          else{
+              balance = state;
+          }
           break;
       default:
           balance = parseInt(read_cookie(BALANCE_COOKIE), 10) || state;
